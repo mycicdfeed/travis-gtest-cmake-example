@@ -36,13 +36,13 @@ Then, to build executables and do all that linking stuff,
 
 To prepare all your tests, run this:
 
-    cmake -Dtest=ON ..
+    cmake -DBUILD_TESTS=ON ..
 
 To run all tests easily,
 
     make test
 
-Note: `cmake -DBUILD_TESTS=ON` turns on the variable 'test', which is specified in the root
+Note: `cmake -DBUILD_TESTS=ON` turns on the variable 'BUILD_TESTS', which is specified in the root
 CMakeLists.txt file. This is handy if you want to build in certain ways. Clear
 description
 [here](http://stackoverflow.com/questions/5998186/cmake-adding-command-line-options).
@@ -52,7 +52,7 @@ Then you can do ./myexecutable for the generated executable, e.g.:
 
     ./project1
 
-and if you did cmake with test=ON:
+and if you did cmake with BUILD_TESTS=ON:
 
     ./runUnitTests
 
