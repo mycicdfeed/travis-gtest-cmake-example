@@ -1,5 +1,4 @@
-[![Build Status](https://travis-ci.org/gujans/travis-gtest-cmake-example.svg?branch=master)](https://travis-ci.org/gujans/travis-gtest-cmake-example) [![codecov](https://codecov.io/gh/gujans/travis-gtest-cmake-example/branch/master/graph/badge.svg)](https://codecov.io/gh/gujans/travis-gtest-cmake-example)
-
+[![Build Status](https://travis-ci.com/gujans/travis-gtest-cmake-example.svg?branch=master)](https://travis-ci.com/gujans/travis-gtest-cmake-example)[![codecov](https://codecov.io/gh/gujans/travis-gtest-cmake-example/branch/master/graph/badge.svg)](https://codecov.io/gh/gujans/travis-gtest-cmake-example)
 
 
 # What is this?
@@ -7,7 +6,7 @@ This is an example setup of Travis-CI with cmake and google test. I finally got 
 
 # Where are things?
 `build/` is where code is built - like where executables are.  
-`ext/` includes gtest-1.6.0.
+`ext/` includes googletest framework (git submodule)
 `inlcude/` is where the header files are located (here: project1.h)
 `src/` is where the source files are located (here: project1.cpp, main.cpp)
 `test/` is where the test source files are located (here: test_project1.cpp)

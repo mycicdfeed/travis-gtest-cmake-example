@@ -30,22 +30,22 @@ matrix:
            - libopencv-dev
          sources: 
            - ubuntu-toolchain-r-test
-    - os: linux
-      dist: bionic
-      sudo: true
-      compiler:
-        - clang
-      addons:
-       apt:
-         packages: 
-           - clang-6.0
-           - valgrind
-           # Misc
-           - python-yaml
-           - lcov
-           - libopencv-dev
-         sources: 
-           - ubuntu-toolchain-r-test
+             #    - os: linux
+             #      dist: bionic
+             #      sudo: true
+             #      compiler:
+             #        - clang
+             #      addons:
+             #       apt:
+             #         packages: 
+             #           - clang-6.0
+             #           - valgrind
+             #           # Misc
+             #           - python-yaml
+             #           - lcov
+             #           - libopencv-dev
+             #         sources: 
+             #           - ubuntu-toolchain-r-test
     
 before_install:
     # Combine global build options with OS/compiler-dependent options
