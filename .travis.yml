@@ -16,7 +16,9 @@ matrix:
     - os: linux
       dist: bionic
       sudo: true
-      compiler: gcc
+      compiler:
+        - clang
+        - gcc
       addons:
        apt:
          packages: &bionic_latest_boost_packages
