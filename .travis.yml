@@ -18,21 +18,34 @@ matrix:
       sudo: true
       compiler:
         - gcc
+      addons:
+       apt:
+         packages: 
+           - gcc-7
+           - g++-7
+           - valgrind
+           # Misc
+           - python-yaml
+           - lcov
+           - libopencv-dev
+         sources: 
+           - ubuntu-toolchain-r-test
+    - os: linux
+      dist: bionic
+      sudo: true
+      compiler:
         - clang
       addons:
        apt:
-         packages: &bionic_latest_boost_packages
-           - gcc-7
-           - g++-7
+         packages: 
            - clang-6.0
            - valgrind
            # Misc
            - python-yaml
            - lcov
            - libopencv-dev
-         sources: &bionic_latest_boost_sources
+         sources: 
            - ubuntu-toolchain-r-test
-           - llvm-toolchain-bionic-12
     
 before_install:
     # Combine global build options with OS/compiler-dependent options
